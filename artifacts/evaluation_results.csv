@@ -1,0 +1,13 @@
+detector,threshold,n_samples,n_injected_anomalies,n_flagged,true_positives,false_positives,false_negatives,precision,recall,f1,alert_rate_pct,detection_rate_pct,anomaly_type
+Baseline,3.5,3592,100,3083,100,2983,0,0.0324,1.0,0.0628,85.83,100.0,extreme_value
+IsolationForest,0.55,3592,100,2108,85,2023,15,0.0403,0.85,0.077,58.69,85.0,extreme_value
+Autoencoder,0.8,3592,100,1767,100,1667,0,0.0566,1.0,0.1071,49.19,100.0,extreme_value
+Composite,0.55,3592,100,94,2,92,98,0.0213,0.02,0.0206,2.62,2.0,extreme_value
+Baseline,3.5,3592,100,3083,100,2983,0,0.0324,1.0,0.0628,85.83,100.0,sudden_change
+IsolationForest,0.55,3592,100,2082,59,2023,41,0.0283,0.59,0.0541,57.96,59.0,sudden_change
+Autoencoder,0.8,3592,100,1767,100,1667,0,0.0566,1.0,0.1071,49.19,100.0,sudden_change
+Composite,0.55,3592,100,96,4,92,96,0.0417,0.04,0.0408,2.67,4.0,sudden_change
+Baseline,3.5,3592,100,3083,100,2983,0,0.0324,1.0,0.0628,85.83,100.0,unusual_combo
+IsolationForest,0.55,3592,100,2084,61,2023,39,0.0293,0.61,0.0559,58.02,61.0,unusual_combo
+Autoencoder,0.8,3592,100,1767,100,1667,0,0.0566,1.0,0.1071,49.19,100.0,unusual_combo
+Composite,0.55,3592,100,103,11,92,89,0.1068,0.11,0.1084,2.87,11.0,unusual_combo

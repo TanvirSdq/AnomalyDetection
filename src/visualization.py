@@ -97,7 +97,7 @@ def plot_feature_over_time(
     if condition_col in df.columns:
         conditions = df[condition_col].values
         unique_conditions = pd.unique(conditions)
-        cmap = plt.cm.get_cmap("Pastel1", len(unique_conditions))
+        cmap = matplotlib.colormaps["Pastel1"]
         cond_colors = {c: cmap(i) for i, c in enumerate(unique_conditions)}
         prev_cond = conditions[0]
         start_idx = 0
